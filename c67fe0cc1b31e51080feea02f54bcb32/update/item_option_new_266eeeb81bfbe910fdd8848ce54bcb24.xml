@@ -41,13 +41,13 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>room</name>
-        <order>6000</order>
+        <name>division</name>
+        <order>4000</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Room</question_text>
+        <question_text>Division</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -75,16 +75,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2023-06-30 18:41:14</sys_created_on>
-        <sys_id>a11feeb81bfbe910fdd8848ce54bcbb9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Room</sys_name>
+        <sys_created_on>2023-06-30 18:38:18</sys_created_on>
+        <sys_id>266eeeb81bfbe910fdd8848ce54bcb24</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Division</sys_name>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
-        <sys_update_name>item_option_new_a11feeb81bfbe910fdd8848ce54bcbb9</sys_update_name>
+        <sys_update_name>item_option_new_266eeeb81bfbe910fdd8848ce54bcb24</sys_update_name>
         <sys_updated_by>jatothr2</sys_updated_by>
-        <sys_updated_on>2024-08-01 15:20:25</sys_updated_on>
+        <sys_updated_on>2024-08-01 15:19:35</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=a11feeb81bfbe910fdd8848ce54bcbb9"/>
-    <fx_price action="delete_multiple" query="id=a11feeb81bfbe910fdd8848ce54bcbb9"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=266eeeb81bfbe910fdd8848ce54bcb24"/>
+    <fx_price action="delete_multiple" query="id=266eeeb81bfbe910fdd8848ce54bcb24"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>a11feeb81bfbe910fdd8848ce54bcbb9</id>
+        <id>266eeeb81bfbe910fdd8848ce54bcb24</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2023-06-30 18:41:14</sys_created_on>
-        <sys_id>691feeb81bfbe910fdd8848ce54bcbbc</sys_id>
+        <sys_created_on>2023-06-30 18:38:18</sys_created_on>
+        <sys_id>ea6eeeb81bfbe910fdd8848ce54bcb27</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2023-06-30 18:41:14</sys_updated_on>
+        <sys_updated_on>2023-06-30 18:38:18</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>a11feeb81bfbe910fdd8848ce54bcbb9</id>
+        <id>266eeeb81bfbe910fdd8848ce54bcb24</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2023-06-30 18:41:14</sys_created_on>
-        <sys_id>ed1feeb81bfbe910fdd8848ce54bcbbb</sys_id>
+        <sys_created_on>2023-06-30 18:38:18</sys_created_on>
+        <sys_id>626eeeb81bfbe910fdd8848ce54bcb27</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2023-06-30 18:41:14</sys_updated_on>
+        <sys_updated_on>2023-06-30 18:38:18</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
