@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_g_nioa_ows_meet.OWS_Availability</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Check availability of the room/space using the event start, event end and space information</description>
+        <name>OWS_Availability</name>
+        <script><![CDATA[var OWS_Availability = Class.create();
+OWS_Availability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getAnswer: function() {
+        var evStart = this.getParameter('sysparm_evStart');
+        var evEnd = this.getParameter('sysparm_evEnd');
+        var evSpace = this.getParameter('sysparm_evSpace');
+        gs.info('Rocky OWS start - end - space - ' + evStart + evEnd + evSpace);
+        var r = new sn_ws.RESTMessageV2('OWS WSD', 'Available');
+        r.setStringParameterNoEscape('end', evEnd);
+        r.setStringParameterNoEscape('start', evStart);
+        r.setStringParameterNoEscape('reservable_ids', evSpace);
+
+        var response = r.execute();
+        var responseBody = response.getBody();
+        var resultBody = JSON.parse(responseBody);
+        var nameSpace = resultBody.result[0].name;
+        var isAvailable = resultBody.result[0].is_available;
+        gs.info('Rocky start');
+        if (isAvailable) {
+            gs.info(isAvailable);
+            gs.info('Room ' + nameSpace + ' is available');
+            var strAnswer = 'Room ' + nameSpace + ' is available';
+            JSUtil.logObject(resultBody, "Parsed Response");
+            //	isSpaceAvailable.push(strAnswer);
+        } else {
+            gs.info('Room ' + nameSpace + ' is not available');
+            var strAnswer = 'Room ' + nameSpace + ' is not available';
+            //	isSpaceAvailable.push(strAnswer);
+        }
+        gs.info('Rocky OWS: ' + strAnswer);
+
+        return strAnswer;
+
+
+    },
+    type: 'OWS_Availability'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>felicianofa</sys_created_by>
+        <sys_created_on>2024-06-11 21:35:28</sys_created_on>
+        <sys_id>fcd59aa41b7e46102f6dea0de54bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OWS_Availability</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>sys_script_include_fcd59aa41b7e46102f6dea0de54bcb84</sys_update_name>
+        <sys_updated_by>felicianofa</sys_updated_by>
+        <sys_updated_on>2024-06-11 21:35:28</sys_updated_on>
+    </sys_script_include>
+</record_update>
