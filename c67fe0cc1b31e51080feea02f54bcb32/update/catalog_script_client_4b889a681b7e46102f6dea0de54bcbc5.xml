@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable>IO:541c994c1bf1e51080feea02f54bcb58</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Check Availability of Requested Room</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+    var ga = new GlideAjax('OWS_Availability');
+    ga.addParam('sysparm_name', 'getAnswer');
+	ga.addParam('sysparm_evStart', g_form.getValue('event_start_date'));
+	ga.addParam('sysparm_evEnd', g_form.getValue('event_end_date'))
+	ga.addParam('sysparm_evSpace', g_form.getValue('requested_room'));
+    ga.getXML(spaceAvailable);
+
+    function spaceAvailable(response) {
+		
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        if (answer != null){
+        alert(answer + '. Please select a different room.');
+		g_form.setValue('requested_room','');
+		}
+        else{
+			//alert("Rocky - OWS ");
+		}
+    }
+   
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>felicianofa</sys_created_by>
+        <sys_created_on>2024-06-11 21:45:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b889a681b7e46102f6dea0de54bcbc5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Check Availability of Requested Room</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>catalog_script_client_4b889a681b7e46102f6dea0de54bcbc5</sys_update_name>
+        <sys_updated_by>felicianofa</sys_updated_by>
+        <sys_updated_on>2024-07-01 20:50:55</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set display_value="Event Information ">00a8b01d1bfde91080feea02f54bcb07</variable_set>
+        <view/>
+    </catalog_script_client>
+</record_update>
