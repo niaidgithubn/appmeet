@@ -23,13 +23,13 @@
         <example_text/>
         <field/>
         <global>false</global>
-        <help_tag>More information</help_tag>
-        <help_text/>
+        <help_tag/>
+        <help_text>Please select both 'Event start date and time' and 'Event end date and time' before selecting a room</help_text>
         <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
-        <list_table/>
+        <list_table>sn_wsd_core_space</list_table>
         <lookup_label/>
         <lookup_price/>
         <lookup_table/>
@@ -55,9 +55,12 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference>sn_wsd_core_space</reference>
+        <reference_qual>location_type=65571d4e875d0610e23585160cbb3578^ORlocation_type=27281dce875d0610e23585160cbb3509^EQ</reference_qual>
+        <reference_qual_condition table="sn_wsd_core_space">location_type=65571d4e875d0610e23585160cbb3578^ORlocation_type=27281dce875d0610e23585160cbb3509^EQ<item display_table="sn_wsd_core_space_type" display_value="Conference Center" endquery="false" field="location_type" goto="false" newquery="false" operator="=" or="false" value="65571d4e875d0610e23585160cbb3578"/>
+            <item display_table="sn_wsd_core_space_type" display_value="Learning Center" endquery="false" field="location_type" goto="false" newquery="false" operator="=" or="true" value="27281dce875d0610e23585160cbb3509"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated 
@@ -69,29 +72,29 @@
  */]]></save_script>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
-        <show_help_on_load>false</show_help_on_load>
+        <show_help>true</show_help>
+        <show_help_on_load>true</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>bassem</sys_created_by>
         <sys_created_on>2023-03-20 18:38:07</sys_created_on>
         <sys_id>541c994c1bf1e51080feea02f54bcb58</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Requested room</sys_name>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>item_option_new_541c994c1bf1e51080feea02f54bcb58</sys_update_name>
-        <sys_updated_by>kunapuli</sys_updated_by>
-        <sys_updated_on>2024-06-18 18:34:17</sys_updated_on>
+        <sys_updated_by>felicianofa</sys_updated_by>
+        <sys_updated_on>2024-07-01 20:30:54</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>5</type>
+        <type>21</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set display_value="Event Information ">00a8b01d1bfde91080feea02f54bcb07</variable_set>
