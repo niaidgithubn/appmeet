@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>OWS TEST</name>
+        <password>﷞﷟﷒2010bded1ba301103b8edb1de54bcb55﷬﷔1﷬﷭EHbFHWrq-fro6TzMHxwp7g==AJ3ekkyNss8Wl-NsH1iADb3iH7TQwjyLD2JrkWwvmapqOmg=﷮﷯</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>felicianofa</sys_created_by>
+        <sys_created_on>2024-06-11 21:38:41</sys_created_on>
+        <sys_id>5247d2281b7e46102f6dea0de54bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OWS TEST</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_5247d2281b7e46102f6dea0de54bcb38</sys_update_name>
+        <sys_updated_by>felicianofa</sys_updated_by>
+        <sys_updated_on>2024-06-11 21:38:41</sys_updated_on>
+        <username>wsdapi</username>
+    </sys_auth_profile_basic>
+</record_update>
