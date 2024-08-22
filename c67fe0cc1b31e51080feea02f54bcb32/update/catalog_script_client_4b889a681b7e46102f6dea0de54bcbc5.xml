@@ -19,29 +19,39 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-      return;
-   }
-
-    var ga = new GlideAjax('OWS_Availability');
-    ga.addParam('sysparm_name', 'getAnswer');
-	ga.addParam('sysparm_evStart', g_form.getValue('event_start_date'));
-	ga.addParam('sysparm_evEnd', g_form.getValue('event_end_date'))
-	ga.addParam('sysparm_evSpace', g_form.getValue('requested_room'));
-    ga.getXML(spaceAvailable);
+    var available_room = g_form.getValue('requested_room');
+    var room_arr = available_room.split(",");
+    var final_str = "";
+    if (isLoading || newValue == '') {
+        return;
+    }
+    if (newValue != '') {
+        var ga = new GlideAjax('OWS_Availability');
+        ga.addParam('sysparm_name', 'getAnswer');
+        ga.addParam('sysparm_evStart', g_form.getValue('event_start_date'));
+        ga.addParam('sysparm_evEnd', g_form.getValue('event_end_date'));
+        ga.addParam('sysparm_evSpace', g_form.getValue('requested_room'));
+        ga.getXML(spaceAvailable);
+    }
 
     function spaceAvailable(response) {
-		
         var answer = response.responseXML.documentElement.getAttribute("answer");
-        if (answer != null){
-        alert(answer + '. Please select a different room.');
-		g_form.setValue('requested_room','');
-		}
-        else{
-			//alert("Rocky - OWS ");
-		}
+        var answer_obj = JSON.parse(answer);
+        for (var i = 0; i < answer_obj.length; i++) {
+            if (answer_obj[i].is_available == false) {
+                final_str = answer_obj[i].name;
+                var index = room_arr.indexOf(answer_obj[i].sys_id);
+                if (index != -1) {
+                    room_arr.splice(index, 1);
+                }
+            }
+        }
+        if (final_str) {
+            alert(final_str + " is not available. Please select a different room.");
+        }
+        g_form.setValue('requested_room', room_arr.toString());
     }
-   
+
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>felicianofa</sys_created_by>
@@ -49,15 +59,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b889a681b7e46102f6dea0de54bcbc5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Check Availability of Requested Room</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_4b889a681b7e46102f6dea0de54bcbc5</sys_update_name>
-        <sys_updated_by>felicianofa</sys_updated_by>
-        <sys_updated_on>2024-07-01 20:50:55</sys_updated_on>
+        <sys_updated_by>shoaibm2</sys_updated_by>
+        <sys_updated_on>2024-07-12 19:11:10</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
