@@ -14,17 +14,26 @@ OWS_Availability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         var evStart = this.getParameter('sysparm_evStart');
         var evEnd = this.getParameter('sysparm_evEnd');
         var evSpace = this.getParameter('sysparm_evSpace');
-        gs.info('Rocky OWS start - end - space - ' + evStart + evEnd + evSpace);
+		//Convert the Time in GMT Timezone
+        var session = gs.getSession();
+        var zoneName = session.getTimeZoneName();
+        var evStartGMT = new GlideScheduleDateTime(evStart);
+        evStartGMT.convertTimeZone(zoneName, "GMT");
+        var evEndGMT = new GlideScheduleDateTime(evEnd);
+        evEndGMT.convertTimeZone(zoneName, "GMT");
+        //gs.info('Rocky OWS start - end - space - ' + evStart + evEnd + evSpace);
         var r = new sn_ws.RESTMessageV2('OWS WSD', 'Available');
-        r.setStringParameterNoEscape('end', evEnd);
-        r.setStringParameterNoEscape('start', evStart);
+        r.setStringParameterNoEscape('end', evEndGMT);
+        r.setStringParameterNoEscape('start', evStartGMT);
         r.setStringParameterNoEscape('reservable_ids', evSpace);
-
+        gs.info("Rocky Start Times:" + evStartGMT + "Rockey End:" + evEndGMT);
         var response = r.execute();
         var responseBody = response.getBody();
         var resultBody = JSON.parse(responseBody);
-        var nameSpace = resultBody.result[0].name;
+        gs.info('Rocky Response Body: ' + responseBody);
+        /*var nameSpace = resultBody.result[0].name;
         var isAvailable = resultBody.result[0].is_available;
+        gs.info('Rocky Response Body: ' + responseBody);
         gs.info('Rocky start');
         if (isAvailable) {
             gs.info(isAvailable);
@@ -39,23 +48,31 @@ OWS_Availability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         }
         gs.info('Rocky OWS: ' + strAnswer);
 
-        return strAnswer;
-
-
+        return strAnswer;*/
+        var returnobj = resultBody.result.map(function(room) {
+            return {
+                name: room.name,
+                sys_id: room.sys_id,
+                is_available: room.is_available
+            };
+        });
+        //gs.info('Rocky Return Object: ' + JSON.stringify(returnobj));
+        return JSON.stringify(returnobj);
     },
+
     type: 'OWS_Availability'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>felicianofa</sys_created_by>
         <sys_created_on>2024-06-11 21:35:28</sys_created_on>
         <sys_id>fcd59aa41b7e46102f6dea0de54bcb84</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>OWS_Availability</sys_name>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>sys_script_include_fcd59aa41b7e46102f6dea0de54bcb84</sys_update_name>
-        <sys_updated_by>felicianofa</sys_updated_by>
-        <sys_updated_on>2024-06-11 21:35:28</sys_updated_on>
+        <sys_updated_by>shoaibm2</sys_updated_by>
+        <sys_updated_on>2024-07-12 19:36:34</sys_updated_on>
     </sys_script_include>
 </record_update>
