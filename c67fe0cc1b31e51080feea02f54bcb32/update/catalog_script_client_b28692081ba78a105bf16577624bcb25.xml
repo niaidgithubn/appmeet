@@ -22,15 +22,17 @@
 
     var start_date = g_form.getValue('event_start_date');
     var end_date = g_form.getValue('event_end_date');
-   // alert("Please confirm If the Event Start Duration is " + start_date + " and Event  End Duration is " + end_date);
-
-    var answer = confirm("The Event Start Duration is " + start_date + " and Event End Duration is " + end_date + "\n\n\n"+"Please click OK to submit this request or CANCEL to update the event time duration");
+	var room_location = g_form.getValue('room_location');
+    // alert("Please confirm If the Event Start Duration is " + start_date + " and Event  End Duration is " + end_date);
+if (room_location == 'Conference Center'){
+    var answer = confirm("The Event Start Duration is " + start_date + " and Event End Duration is " + end_date + "\n\n\n" + "Please click OK to submit this request or CANCEL to update the event time duration");
 
     if (answer == false) {
 
         return false;
 
     }
+}
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>shoaibm2</sys_created_by>
@@ -38,15 +40,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b28692081ba78a105bf16577624bcb25</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Meeting Date Validations</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_b28692081ba78a105bf16577624bcb25</sys_update_name>
-        <sys_updated_by>shoaibm2</sys_updated_by>
-        <sys_updated_on>2024-07-18 15:38:07</sys_updated_on>
+        <sys_updated_by>felicianofa</sys_updated_by>
+        <sys_updated_on>2024-08-30 15:51:29</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
