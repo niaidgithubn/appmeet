@@ -34,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>27d2613a1bb2ce102f6dea0de54bcb50</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Requested Room Read Only if Start Date and End Dates are Empty</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -42,7 +42,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_ui_policy_27d2613a1bb2ce102f6dea0de54bcb50</sys_update_name>
         <sys_updated_by>kunapuli</sys_updated_by>
-        <sys_updated_on>2024-06-18 19:02:42</sys_updated_on>
+        <sys_updated_on>2024-08-23 01:37:25</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <va_supported>true</va_supported>
