@@ -19,19 +19,31 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-      return;
-   }
+    if (isLoading || newValue == '') {
+        return;
+    }
 
-   //Type appropriate comment here, and begin script below
-   		var slt_start_date= g_form.getValue('event_start_date');
-		var slt_end_date= g_form.getValue('event_end_date');
-		var selected_room= g_form.getValue('room_location');
-		g_form.clearValue('requested_room',true);	
-		if ((slt_start_date!="" || slt_end_date!="") && (selected_room =='Conference Center')){
-			g_form.setMandatory('requested_room',true);	
+    //Type appropriate comment here, and begin script below
+    var slt_start_date = g_form.getValue('event_start_date');
+    var slt_end_date = g_form.getValue('event_end_date');
+    var selected_room = g_form.getValue('room_location');
+    //alert(slt_start_date);
+    //alert(slt_end_date);
+    g_form.clearValue('requested_room', true);
+    if ((slt_start_date != "" || slt_end_date != "") && (selected_room == 'Conference Center')) {
+        g_form.setMandatory('requested_room', true);
 
-		}
+    }
+    if ((slt_start_date == "") && (selected_room == 'Conference Center')) {
+        g_form.setReadOnly('requested_room', true);
+        g_form.setMandatory('requested_room', true);
+
+    }
+    if ((slt_end_date == "") && (selected_room == 'Conference Center')) {
+        g_form.setReadOnly('requested_room', true);
+        g_form.setMandatory('requested_room', true);
+
+    }
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>kunapuli</sys_created_by>
@@ -39,15 +51,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>43a223e91b149a105bf16577624bcb00</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Make Requested Room Mandatory on End Dat</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_43a223e91b149a105bf16577624bcb00</sys_update_name>
-        <sys_updated_by>kunapuli</sys_updated_by>
-        <sys_updated_on>2024-08-29 16:51:30</sys_updated_on>
+        <sys_updated_by>shoaibm2</sys_updated_by>
+        <sys_updated_on>2024-09-05 19:19:57</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
