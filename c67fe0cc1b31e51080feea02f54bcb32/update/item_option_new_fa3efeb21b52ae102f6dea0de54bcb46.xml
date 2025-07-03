@@ -4,7 +4,7 @@
         <attributes/>
         <cat_item/>
         <category/>
-        <choice_direction>down</choice_direction>
+        <choice_direction>across</choice_direction>
         <choice_field/>
         <choice_table/>
         <conversational_label/>
@@ -15,7 +15,7 @@
         <delivery_plan/>
         <description/>
         <display_title>false</display_title>
-        <do_not_select_first>false</do_not_select_first>
+        <do_not_select_first>true</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <dynamic_value_dot_walk_path/>
@@ -27,7 +27,7 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>true</include_none>
+        <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
@@ -42,14 +42,14 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>do_you_need_breakout_rooms</name>
+        <name>nia</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>5184</order>
+        <order>1000</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Do you need breakout rooms? </question_text>
+        <question_text>NIA</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -77,27 +77,27 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2023-03-20 19:46:11</sys_created_on>
-        <sys_id>9fab6d4c1b35e51080feea02f54bcbd0</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Do you need breakout rooms? </sys_name>
+        <sys_created_on>2025-06-26 20:05:41</sys_created_on>
+        <sys_id>fa3efeb21b52ae102f6dea0de54bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NIA</sys_name>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
-        <sys_update_name>item_option_new_9fab6d4c1b35e51080feea02f54bcbd0</sys_update_name>
+        <sys_update_name>item_option_new_fa3efeb21b52ae102f6dea0de54bcb46</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-06-26 18:53:47</sys_updated_on>
+        <sys_updated_on>2025-06-26 20:05:41</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>5</type>
+        <type>3</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
-        <variable_set display_value="Event Information ">00a8b01d1bfde91080feea02f54bcb07</variable_set>
+        <variable_set display_value="Number of attendees">67caf6fe1b12ae102f6dea0de54bcb47</variable_set>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=9fab6d4c1b35e51080feea02f54bcbd0"/>
-    <fx_price action="delete_multiple" query="id=9fab6d4c1b35e51080feea02f54bcbd0"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=fa3efeb21b52ae102f6dea0de54bcb46"/>
+    <fx_price action="delete_multiple" query="id=fa3efeb21b52ae102f6dea0de54bcb46"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>9fab6d4c1b35e51080feea02f54bcbd0</id>
+        <id>fa3efeb21b52ae102f6dea0de54bcb46</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2023-03-24 13:34:31</sys_created_on>
-        <sys_id>8d1dfc511b312d1080feea02f54bcb46</sys_id>
+        <sys_created_on>2025-06-26 20:05:41</sys_created_on>
+        <sys_id>723eb2361b52ae102f6dea0de54bcb33</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2023-03-24 13:34:31</sys_updated_on>
+        <sys_updated_on>2025-06-26 20:05:41</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>9fab6d4c1b35e51080feea02f54bcbd0</id>
+        <id>fa3efeb21b52ae102f6dea0de54bcb46</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2023-03-24 13:34:31</sys_created_on>
-        <sys_id>051dfc511b312d1080feea02f54bcb46</sys_id>
+        <sys_created_on>2025-06-26 20:05:41</sys_created_on>
+        <sys_id>723eb2361b52ae102f6dea0de54bcb32</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2023-03-24 13:34:31</sys_updated_on>
+        <sys_updated_on>2025-06-26 20:05:41</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

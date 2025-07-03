@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>number_of_attendees</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes>max_rows=4</set_attributes>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-27 17:34:59</sys_created_on>
+        <sys_id>5af4270f1b9aee102f6dea0de54bcb92</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Number of attendees</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>item_option_new_set_5af4270f1b9aee102f6dea0de54bcb92</sys_update_name>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-27 20:16:35</sys_updated_on>
+        <title>Number of attendees</title>
+        <type>one_to_many</type>
+        <version>20</version>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>
