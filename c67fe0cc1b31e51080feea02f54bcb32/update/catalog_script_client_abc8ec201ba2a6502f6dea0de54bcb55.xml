@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>false</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Meeting &amp; Events Reservation">fdc27c801b71e51080feea02f54bcb3f</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Total of Attendess for O and V </name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onLoad() { 
+  // This script calculates the total number of onsite and virtual attendees
+  // and sets them in their respective fields when the form loads
+
+  function recalculateTotalAttendees() {
+    var onsiteTotal = 0;
+    var virtualTotal = 0;
+
+    var attendeesStr = g_form.getValue('number_of_attendees');
+    if (!attendeesStr) return;
+
+    var rows = JSON.parse(attendeesStr);
+
+    rows.forEach(function(row) {
+      var onsite = parseInt(row.onsite || 0);
+      var virtual = parseInt(row.virtual || 0);
+
+      onsiteTotal += isNaN(onsite) ? 0 : onsite;
+      virtualTotal += isNaN(virtual) ? 0 : virtual;
+    });
+
+    g_form.setValue('total_number_of_onside_attendees', onsiteTotal);
+    g_form.setValue('total_number_of_virtual_attendees', virtualTotal);
+  }
+
+  recalculateTotalAttendees();
+}
+]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-07-01 19:43:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abc8ec201ba2a6502f6dea0de54bcb55</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Total of Attendess for O and V </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>catalog_script_client_abc8ec201ba2a6502f6dea0de54bcb55</sys_update_name>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-07-01 19:47:34</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>
