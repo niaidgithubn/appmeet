@@ -18,8 +18,9 @@
         <name>Total of Attendess for O and V </name>
         <order/>
         <published_ref/>
-        <script><![CDATA[function onSubmit() {
+        <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
+      //Type appropriate comment here, and begin script below
     function recalculateTotalAttendees() {
     var onsiteTotal = 0;
     var virtualTotal = 0;
@@ -49,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>abc8ec201ba2a6502f6dea0de54bcb55</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Total of Attendess for O and V </sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -57,9 +58,9 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_abc8ec201ba2a6502f6dea0de54bcb55</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-07 14:57:31</sys_updated_on>
+        <sys_updated_on>2025-07-08 16:40:25</sys_updated_on>
         <table/>
-        <type>onSubmit</type>
+        <type>onLoad</type>
         <ui_type>10</ui_type>
         <va_supported>true</va_supported>
         <variable_set/>
