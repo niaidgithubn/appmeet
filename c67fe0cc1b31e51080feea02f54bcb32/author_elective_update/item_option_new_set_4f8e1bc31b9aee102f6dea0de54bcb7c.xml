@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="DELETE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>number_of_attendees</internal_name>
+        <layout>2across</layout>
+        <name/>
+        <order>6500</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-27 17:05:41</sys_created_on>
+        <sys_id>4f8e1bc31b9aee102f6dea0de54bcb7c</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Number of attendees</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>item_option_new_set_4f8e1bc31b9aee102f6dea0de54bcb7c</sys_update_name>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-27 17:23:38</sys_updated_on>
+        <title>Number of attendees</title>
+        <type>one_to_one</type>
+        <version>19</version>
+        <write_roles/>
+    </item_option_new_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</application>
+        <file_path/>
+        <instance_id>a1389fe21b3ef850364c202de54bcba1</instance_id>
+        <instance_name>niaiddev4</instance_name>
+        <name>item_option_new_set_4f8e1bc31b9aee102f6dea0de54bcb7c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><create_roles/><description/><display_title>false</display_title><internal_name>number_of_attendees</internal_name><layout>2across</layout><name/><order>6500</order><read_roles/><set_attributes/><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>bassem</sys_created_by><sys_created_on>2025-06-27 17:05:41</sys_created_on><sys_id>4f8e1bc31b9aee102f6dea0de54bcb7c</sys_id><sys_mod_count>19</sys_mod_count><sys_name>Number of attendees</sys_name><sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package><sys_policy/><sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope><sys_update_name>item_option_new_set_4f8e1bc31b9aee102f6dea0de54bcb7c</sys_update_name><sys_updated_by>bassem</sys_updated_by><sys_updated_on>2025-06-27 17:23:38</sys_updated_on><title>Number of attendees</title><type>one_to_one</type><version>19</version><write_roles/></item_option_new_set></record_update>]]></payload>
+        <payload_hash>1175023010</payload_hash>
+        <record_name>Number of attendees</record_name>
+        <reverted_from/>
+        <source>a14436351b4ab9104385877be54bcbff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-27 17:23:38</sys_created_on>
+        <sys_id>feb26b4b1b9aee102f6dea0de54bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197b26a933c0000001</sys_recorded_at>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-27 17:23:38</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>f2b26b4bdf9aee10b2d4f0b1b1b889fd</update_guid>
+        <update_guid_history>f2b26b4bdf9aee10b2d4f0b1b1b889fd:1175023010,4242234b599aee10ed2fa51485556dd4:-2102440131,b9c1a70bc89aee1059856cbbe6b44a61:-1893741828,1aa1e30b519aee109e262045a01bfc40:-1685043525,be512fc7339aee104586e9887b68c19a:-1476345222,0741ebc7c89aee10b38e89839d3eba16:-1267646919,0e41abc7609aee1066f174c5c6912376:-1058948616,4941abc7849aee10c230bf8cc1ef7e21:-850250313,97316bc7509aee103e9dcaaab829d0bd:-641552010,5e3127c76c9aee101e2b91c9d749042c:-432853707,11212bc7289aee1031da9747ea50f615:-660338015,dc01ef87b89aee108813bd8e354cf4a7:-451639712,94f0e3c7749aee1085ca45ffd294179e:-242941409,303f9f074c9aee101b9def1ae8819909:-34243106,141fd307309aee10d074936a6243b3bc:174455197,fbee9b07649aee100b9b969cd4634a68:383153500,e0ee5707ad9aee10f5444c4b0bc2f4c9:591851803,63ce57075d9aee10616458651fca79a0:800550106,bfbe57078b9aee100e1c0e02119d032e:1009248409,f39e13c3cc9aee106f28ba938e80efbe:797033724</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6ee4ab4b1b9aee102f6dea0de54bcbc0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-27 17:33:11</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new_set">item_option_new_set</sys_db_object>
+        <sys_id>31977c2903e046b092b47360f9b3a9e1</sys_id>
+        <sys_metadata>4f8e1bc31b9aee102f6dea0de54bcb7c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Number of attendees</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_scope_delete display_value="">1dbe6b50b2464ff085902289fb370e90</sys_scope_delete>
+        <sys_update_name>item_option_new_set_4f8e1bc31b9aee102f6dea0de54bcb7c</sys_update_name>
+        <sys_update_version display_value="item_option_new_set_4f8e1bc31b9aee102f6dea0de54bcb7c">feb26b4b1b9aee102f6dea0de54bcbfd</sys_update_version>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-27 17:33:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

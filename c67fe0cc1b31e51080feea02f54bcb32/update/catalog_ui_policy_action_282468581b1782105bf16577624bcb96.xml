@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>false</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-09-05 21:21:12</sys_updated_on>
         <table/>
         <ui_policy display_value="Make Requested Room Mandatory">55e324581b1782105bf16577624bcb7b</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>requested_room</variable>
         <variable_set/>
         <visible>ignore</visible>

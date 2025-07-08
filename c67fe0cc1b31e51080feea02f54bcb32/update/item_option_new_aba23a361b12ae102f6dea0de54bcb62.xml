@@ -97,7 +97,7 @@
         <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex display_value="Number">556cbfe5876b1300e0ef0cf888cb0be3</validate_regex>
         <variable_name/>
-        <variable_set display_value="Number of attendees">bbb13afe1bde6e102f6dea0de54bcb6c</variable_set>
+        <variable_set/>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
