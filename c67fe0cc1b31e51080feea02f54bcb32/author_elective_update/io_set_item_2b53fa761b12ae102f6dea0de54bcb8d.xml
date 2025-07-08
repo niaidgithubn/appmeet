@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>6500</order>
+        <sc_cat_item display_value="Meeting &amp; Events Reservation">fdc27c801b71e51080feea02f54bcb3f</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-26 19:18:14</sys_created_on>
+        <sys_id>2b53fa761b12ae102f6dea0de54bcb8d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Number of attendees.Meeting &amp; Events Reservation</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>io_set_item_2b53fa761b12ae102f6dea0de54bcb8d</sys_update_name>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-26 19:18:35</sys_updated_on>
+        <variable_set display_value="Number of attendees">bbb13afe1bde6e102f6dea0de54bcb6c</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</application>
+        <file_path/>
+        <instance_id>a1389fe21b3ef850364c202de54bcba1</instance_id>
+        <instance_name>niaiddev4</instance_name>
+        <name>io_set_item_2b53fa761b12ae102f6dea0de54bcb8d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>6500</order><sc_cat_item display_value="Meeting &amp; Events Reservation">fdc27c801b71e51080feea02f54bcb3f</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>bassem</sys_created_by><sys_created_on>2025-06-26 19:18:14</sys_created_on><sys_id>2b53fa761b12ae102f6dea0de54bcb8d</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Number of attendees.Meeting &amp; Events Reservation</sys_name><sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package><sys_policy/><sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope><sys_update_name>io_set_item_2b53fa761b12ae102f6dea0de54bcb8d</sys_update_name><sys_updated_by>bassem</sys_updated_by><sys_updated_on>2025-06-26 19:18:35</sys_updated_on><variable_set display_value="Number of attendees">bbb13afe1bde6e102f6dea0de54bcb6c</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>1295477205</payload_hash>
+        <record_name>Number of attendees.Meeting &amp; Events Reservation</record_name>
+        <reverted_from/>
+        <source>a14436351b4ab9104385877be54bcbff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-26 19:18:35</sys_created_on>
+        <sys_id>b473b6761b12ae102f6dea0de54bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197adad74800000001</sys_recorded_at>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-26 19:18:35</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>b873b676ad12ae101c823dc9f878713f</update_guid>
+        <update_guid_history>b873b676ad12ae101c823dc9f878713f:1295477205,7753fa76e912ae10c6e52709946106ad:-1956895703</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Number of attendees.Meeting &amp; Events Reservation">879a32fe1b12ae102f6dea0de54bcb07</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-06-26 19:49:52</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>00198cd2938743a680001697b5b07e19</sys_id>
+        <sys_metadata>2b53fa761b12ae102f6dea0de54bcb8d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Number of attendees.Meeting &amp; Events Reservation</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_scope_delete display_value="">1dbe6b50b2464ff085902289fb370e90</sys_scope_delete>
+        <sys_update_name>io_set_item_2b53fa761b12ae102f6dea0de54bcb8d</sys_update_name>
+        <sys_update_version display_value="io_set_item_2b53fa761b12ae102f6dea0de54bcb8d">b473b6761b12ae102f6dea0de54bcb40</sys_update_version>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-06-26 19:49:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

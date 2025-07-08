@@ -38,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e452c4dc1b2056505bf16577624bcb66</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Clear Start End Dates on Room Loc Change</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -46,7 +46,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_e452c4dc1b2056505bf16577624bcb66</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-06-27 19:22:32</sys_updated_on>
+        <sys_updated_on>2025-07-07 15:32:38</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

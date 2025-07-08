@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-08-28 18:20:06</sys_updated_on>
         <table/>
         <ui_policy display_value="Make Event Fields Mandatory after Room Location is selected">5663b5321b724a105bf16577624bcbef</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>event_title</variable>
         <variable_set/>
         <visible>ignore</visible>

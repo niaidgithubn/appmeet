@@ -2,7 +2,7 @@
     <sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE">
         <name>pagesize</name>
         <order>100</order>
-        <rest_message_function display_value="">f57796281b7e46102f6dea0de54bcb04</rest_message_function>
+        <rest_message_function display_value="Available">f57796281b7e46102f6dea0de54bcb04</rest_message_function>
         <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
         <sys_created_by>felicianofa</sys_created_by>
         <sys_created_on>2024-06-11 21:40:50</sys_created_on>

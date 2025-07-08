@@ -13,7 +13,7 @@
         <description/>
         <field/>
         <global>true</global>
-        <isolate_script>true</isolate_script>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>Check Availability of Requested Room</name>
         <order/>
@@ -59,15 +59,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b889a681b7e46102f6dea0de54bcbc5</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Check Availability of Requested Room</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_4b889a681b7e46102f6dea0de54bcbc5</sys_update_name>
-        <sys_updated_by>shoaibm2</sys_updated_by>
-        <sys_updated_on>2024-07-12 19:11:10</sys_updated_on>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-07-07 13:42:21</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

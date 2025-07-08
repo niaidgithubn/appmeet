@@ -5,24 +5,28 @@
         <cleared>false</cleared>
         <disabled>false</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
         <sys_created_by>kunapuli</sys_created_by>
         <sys_created_on>2024-07-05 15:08:15</sys_created_on>
         <sys_id>282468581b1782105bf16577624bcb96</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>requested_room</sys_name>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_ui_policy_action_282468581b1782105bf16577624bcb96</sys_update_name>
-        <sys_updated_by>felicianofa</sys_updated_by>
-        <sys_updated_on>2024-09-05 21:21:12</sys_updated_on>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-07-07 15:16:48</sys_updated_on>
         <table/>
         <ui_policy display_value="Make Requested Room Mandatory">55e324581b1782105bf16577624bcb7b</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>requested_room</variable>
         <variable_set/>
-        <visible>ignore</visible>
+        <visible>true</visible>
     </catalog_ui_policy_action>
 </record_update>

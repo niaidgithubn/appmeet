@@ -18,11 +18,9 @@
         <name>Total of Attendess for O and V </name>
         <order/>
         <published_ref/>
-        <script><![CDATA[function onLoad() { 
-  // This script calculates the total number of onsite and virtual attendees
-  // and sets them in their respective fields when the form loads
-
-  function recalculateTotalAttendees() {
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+    function recalculateTotalAttendees() {
     var onsiteTotal = 0;
     var virtualTotal = 0;
 
@@ -44,15 +42,14 @@
   }
 
   recalculateTotalAttendees();
-}
-]]></script>
+}]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>bassem</sys_created_by>
         <sys_created_on>2025-07-01 19:43:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>abc8ec201ba2a6502f6dea0de54bcb55</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Total of Attendess for O and V </sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -60,10 +57,10 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_abc8ec201ba2a6502f6dea0de54bcb55</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-01 19:47:34</sys_updated_on>
+        <sys_updated_on>2025-07-07 14:57:31</sys_updated_on>
         <table/>
-        <type>onLoad</type>
-        <ui_type>0</ui_type>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
         <va_supported>true</va_supported>
         <variable_set/>
         <view/>

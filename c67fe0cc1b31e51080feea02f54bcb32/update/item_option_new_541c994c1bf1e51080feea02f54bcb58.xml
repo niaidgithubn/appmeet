@@ -7,6 +7,7 @@
         <choice_direction>down</choice_direction>
         <choice_field/>
         <choice_table/>
+        <conversational_label/>
         <create_roles/>
         <default_html_value/>
         <default_value/>
@@ -42,6 +43,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>requested_room</name>
+        <not_available_conversation>false</not_available_conversation>
         <order>5160</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
@@ -56,8 +58,8 @@
         <record/>
         <record_producer_table/>
         <reference>sn_wsd_core_space</reference>
-        <reference_qual>javascript:'location_type.name='+current.variables.room_location;</reference_qual>
-        <reference_qual_condition table="sn_wsd_core_space">location_type.name="Conference Center";^EQ<item endquery="false" field="location_type.name" goto="false" newquery="false" operator="=" or="false" value="&quot;Conference Center&quot;;"/>
+        <reference_qual>location_type.name=Conference Center^EQ</reference_qual>
+        <reference_qual_condition table="sn_wsd_core_space">location_type.name=Conference Center^EQ<item endquery="false" field="location_type.name" goto="false" newquery="false" operator="=" or="false" value="Conference Center"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <rich_text/>
@@ -79,16 +81,17 @@
         <sys_created_by>bassem</sys_created_by>
         <sys_created_on>2023-03-20 18:38:07</sys_created_on>
         <sys_id>541c994c1bf1e51080feea02f54bcb58</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>Requested room</sys_name>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
         <sys_policy/>
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>item_option_new_541c994c1bf1e51080feea02f54bcb58</sys_update_name>
-        <sys_updated_by>shoaibm2</sys_updated_by>
-        <sys_updated_on>2024-07-23 19:05:06</sys_updated_on>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-07-08 14:13:13</sys_updated_on>
         <table/>
         <tooltip/>
+        <topic_block/>
         <type>21</type>
         <ui_page/>
         <unique>false</unique>
