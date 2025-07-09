@@ -20,8 +20,8 @@
         <published_ref/>
         <script><![CDATA[function onLoad() {
     
-  // var obj = (g_form.getValue('number_of_attendees').length != 0) ? JSON.parse(g_form.getValue('number_of_attendees')) : [];
-  var obj=[];
+   var obj = (g_form.getValue('number_of_attendees').length != 0) ? JSON.parse(g_form.getValue('number_of_attendees')) : [];
+ // var obj=[];
     obj.push({
         organization: 'NIAID',
         onsite: '',
@@ -50,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edb0378b1bdaee102f6dea0de54bcbab</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Adding rows to the  number of attendees</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -58,7 +58,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_edb0378b1bdaee102f6dea0de54bcbab</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-09 14:13:18</sys_updated_on>
+        <sys_updated_on>2025-07-09 15:20:54</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
@@ -66,4 +66,15 @@
         <variable_set/>
         <view/>
     </catalog_script_client>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>edb0378b1bdaee102f6dea0de54bcbab</id>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-07-09 15:20:54</sys_created_on>
+        <sys_id>b1b934831bee22103a6086eae54bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-07-09 15:20:54</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
