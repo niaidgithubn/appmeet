@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
+        <active>true</active>
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -32,7 +33,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Rocky Feliciano">2254ad64dbad11509d3f93d4f3961977</created_by_user>
+        <created_by_user display_value="Ferdinand Feliciano">2254ad64dbad11509d3f93d4f3961977</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config/>
@@ -72,6 +73,7 @@
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
+        <no_bulk_migration>false</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-2</other_threshold>
         <others>true</others>

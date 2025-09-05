@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>200</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-06-18 16:37:45</sys_updated_on>
         <table/>
         <ui_policy display_value="Display start date and end date based on Temporary pass">d515597a97f64a10eb87b217f053afc0</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>end_date</variable>
         <variable_set/>
         <visible>true</visible>

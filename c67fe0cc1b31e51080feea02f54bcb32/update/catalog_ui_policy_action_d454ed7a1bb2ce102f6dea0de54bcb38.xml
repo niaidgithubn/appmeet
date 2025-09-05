@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>true</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <order>50</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-08-28 17:35:01</sys_updated_on>
         <table/>
         <ui_policy display_value="Requested Room Read Only if Start Date and End Dates are Empty">27d2613a1bb2ce102f6dea0de54bcb50</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>requested_room</variable>
         <variable_set/>
         <visible>ignore</visible>

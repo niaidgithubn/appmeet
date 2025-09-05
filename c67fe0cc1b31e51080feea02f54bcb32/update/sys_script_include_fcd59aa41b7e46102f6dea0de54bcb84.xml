@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>true</client_callable>
         <description>Check availability of the room/space using the event start, event end and space information</description>
+        <mobile_callable>false</mobile_callable>
         <name>OWS_Availability</name>
+        <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var OWS_Availability = Class.create();
 OWS_Availability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
