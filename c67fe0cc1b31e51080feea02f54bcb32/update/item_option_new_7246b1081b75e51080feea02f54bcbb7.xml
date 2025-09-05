@@ -14,6 +14,7 @@
         <delete_roles/>
         <delivery_plan/>
         <description/>
+        <disable_initial_slot_fill>false</disable_initial_slot_fill>
         <display_title>true</display_title>
         <do_not_select_first>true</do_not_select_first>
         <dynamic_default_value/>
@@ -31,8 +32,10 @@
         <instructions><![CDATA[<p><strong>Note:  For NIAID meeting recordings intended for use other than internal archiving purposes or meeting transcription, you must fill out the </strong><a href="http://inside.niaid.nih.gov/topic/calendars/MeetingLogistics/fishers/Documents/NIAIDMeetIntakeRecordingRequest.docx" target="_blank" rel="noopener noreferrer nofollow"><strong>Recording Request Form</strong></a><strong> and send to the NIAID Executive Officer </strong><a href="mailto:JHarper&#64;niaid.gov" rel="nofollow"><strong>JHarper&#64;niaid.gov</strong></a><strong>  to receive permission.</strong><strong>  NIAID will not host the video on any official channel; meeting hosts are responsible for finding a place to post the video and must include this information in the Recording Request Form.  Please forward approved recording requests to NIAID Meet.</strong></p>]]></instructions>
         <layout>normal</layout>
         <list_table>question_choice</list_table>
+        <lookup_dependent_question/>
         <lookup_label/>
         <lookup_price/>
+        <lookup_source/>
         <lookup_table>question_choice</lookup_table>
         <lookup_unique>false</lookup_unique>
         <lookup_value>text</lookup_value>

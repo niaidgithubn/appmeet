@@ -2,7 +2,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2024-01-05 16:22:30</change_date>
         <changed_by display_value="Palgun Yarraguntla">70b9967c1b643c50b731ed3be54bcb3b</changed_by>
-        <content display_value="Test the connection">020fb10073bd0010011e3e2dfef6a79d</content>
+        <content display_value="Test connection">020fb10073bd0010011e3e2dfef6a79d</content>
         <related_change_log_entry/>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

@@ -2,7 +2,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2024-01-05 16:21:07</change_date>
         <changed_by display_value="Palgun Yarraguntla">70b9967c1b643c50b731ed3be54bcb3b</changed_by>
-        <content display_value="Filter personal applications">f66c081953d6301095e2ddeeff7b12c5</content>
+        <content/>
         <related_change_log_entry/>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

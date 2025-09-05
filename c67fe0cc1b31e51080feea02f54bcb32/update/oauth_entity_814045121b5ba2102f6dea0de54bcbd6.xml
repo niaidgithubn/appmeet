@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>60</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>1624ac93b46221009eb8191f0e41680d</client_id>
+        <client_secret>﷞﷟﷒e3007ded1ba301103b8edb1de54bcb67﷬﷔1﷬﷭CPYS-0_HVxwbYx4CbW96Xg==FhnMKPbkADUgO4es6FWnHrWFx5swnJ6de8Skib-b2cGWVuAg﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>c14045121b5ba2102f6dea0de54bcbd6</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments>Used by the service WebKit HTML to PDF</comments>
+        <default_grant_type>password</default_grant_type>
+        <extend_refresh_token_expiry>false</extend_refresh_token_expiry>
+        <id_token_lifespan>86400</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>60</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>WebKit HTML to PDF</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url/>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt/>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2025-08-13 14:41:10</sys_created_on>
+        <sys_id>814045121b5ba2102f6dea0de54bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WebKit HTML to PDF</sys_name>
+        <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
+        <sys_update_name>oauth_entity_814045121b5ba2102f6dea0de54bcbd6</sys_update_name>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2025-08-13 14:41:10</sys_updated_on>
+        <token_url/>
+        <type>client</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <use_pkce>false</use_pkce>
+        <user/>
+    </oauth_entity>
+</record_update>

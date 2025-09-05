@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>true</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>Poster_Printing_Util</name>
+        <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var Poster_Printing_Util = Class.create();
 Poster_Printing_Util.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 

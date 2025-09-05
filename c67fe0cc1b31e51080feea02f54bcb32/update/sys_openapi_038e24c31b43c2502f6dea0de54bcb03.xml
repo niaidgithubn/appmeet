@@ -4,7 +4,9 @@
         <display_name>OWS WSD Multi Reservation2 - latest</display_name>
         <name>OWS WSD Multi Reservation2</name>
         <namespace>OWSWSDMultiReservation2latest</namespace>
+        <serialization_version/>
         <serialized_openapi>{"fSchemas":[],"fParameters":[],"fHeaders":[],"fRequests":[],"fResponses":[]}</serialized_openapi>
+        <source_type>OpenAPI</source_type>
         <sys_class_name>sys_openapi</sys_class_name>
         <sys_created_by>felicianofa</sys_created_by>
         <sys_created_on>2024-07-01 18:41:11</sys_created_on>

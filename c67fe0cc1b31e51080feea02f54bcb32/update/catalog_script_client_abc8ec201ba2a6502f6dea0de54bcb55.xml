@@ -18,8 +18,9 @@
         <name>Total of Attendess for O and V </name>
         <order/>
         <published_ref/>
-        <script><![CDATA[function onSubmit() {
-  var onsiteTotal = 0;
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+    var onsiteTotal = 0;
   var virtualTotal = 0;
 
   var attendeesStr = g_form.getValue('number_of_attendees');
@@ -54,6 +55,7 @@
   }
 
   return true; // always return true to allow form submission
+
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>bassem</sys_created_by>
@@ -61,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>abc8ec201ba2a6502f6dea0de54bcb55</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Total of Attendess for O and V </sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -69,23 +71,12 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_abc8ec201ba2a6502f6dea0de54bcb55</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-08 19:42:30</sys_updated_on>
+        <sys_updated_on>2025-07-11 14:16:13</sys_updated_on>
         <table/>
-        <type>onSubmit</type>
+        <type>onLoad</type>
         <ui_type>0</ui_type>
         <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>abc8ec201ba2a6502f6dea0de54bcb55</id>
-        <sys_created_by>bassem</sys_created_by>
-        <sys_created_on>2025-07-08 19:36:27</sys_created_on>
-        <sys_id>eb9a60721bae2690df0eed3be54bcb09</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-08 19:36:27</sys_updated_on>
-        <table>catalog_script_client</table>
-        <use_es_latest>false</use_es_latest>
-    </sys_es_latest_script>
 </record_update>
