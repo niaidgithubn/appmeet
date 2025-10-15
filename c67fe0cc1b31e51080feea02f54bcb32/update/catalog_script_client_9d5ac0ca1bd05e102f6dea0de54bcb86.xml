@@ -25,7 +25,7 @@
 
    //Type appropriate comment here, and begin script below  
 		var selected_room= g_form.getValue('room_location');
-		if (selected_room =='Conference Center'){
+		if (selected_room =='Conference Center'||selected_room =='Cafeteria'){
 			g_form.setReadOnly('requested_room',false);
 			g_form.clearValue('requested_room',true);
 			g_form.clearValue('event_end_date',true);
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d5ac0ca1bd05e102f6dea0de54bcb86</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Clear Requested Room on Start Date Chang</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -51,7 +51,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_9d5ac0ca1bd05e102f6dea0de54bcb86</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-07 15:32:44</sys_updated_on>
+        <sys_updated_on>2025-10-02 12:23:56</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

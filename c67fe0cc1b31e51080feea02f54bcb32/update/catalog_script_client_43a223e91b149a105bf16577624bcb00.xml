@@ -31,16 +31,16 @@
     //alert(slt_end_date);
 	g_form.setReadOnly('requested_room', true);
     g_form.clearValue('requested_room', true);
-    if ((slt_start_date != "" || slt_end_date != "") && (selected_room == 'Conference Center')) {
+    if ((slt_start_date != "" || slt_end_date != "") && (selected_room == 'Conference Center' || selected_room == 'Cafeteria')) {
        // g_form.setMandatory('requested_room', true);
 
     }
-    if ((slt_start_date == "") && (selected_room == 'Conference Center')) {
+    if ((slt_start_date == "") && (selected_room == 'Conference Center'|| selected_room == 'Cafeteria')) {
         g_form.setReadOnly('requested_room', true);
       //  g_form.setMandatory('requested_room', true);
 
     }
-    if ((slt_end_date == "") && (selected_room == 'Conference Center')) {
+    if ((slt_end_date == "") && (selected_room == 'Conference Center'|| selected_room == 'Cafeteria')) {
         g_form.setReadOnly('requested_room', true);
         g_form.setMandatory('requested_room', true);
 
@@ -52,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>43a223e91b149a105bf16577624bcb00</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Make Requested Room Mandatory on End Dat</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -60,7 +60,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_43a223e91b149a105bf16577624bcb00</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-07-07 15:32:31</sys_updated_on>
+        <sys_updated_on>2025-10-02 12:27:08</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

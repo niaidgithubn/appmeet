@@ -19,7 +19,7 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue) {
-    var show = (newValue == 'Conference Center'); // or 'true' if boolean
+    var show = (newValue == 'Conference Center'||newValue == 'Cafeteria'); // or 'true' if boolean
     g_form.setDisplay('number_of_attendees', show);
 	g_form.setMandatory('number_of_attendees', true)
 }]]></script>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>55f4bef61b12ae102f6dea0de54bcb8d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>number of attendees hide/show</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_55f4bef61b12ae102f6dea0de54bcb8d</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-06-26 19:47:34</sys_updated_on>
+        <sys_updated_on>2025-10-02 12:19:52</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
