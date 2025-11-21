@@ -36,14 +36,14 @@
 		g_form.setMandatory('event_start_date',true);
         g_form.setMandatory('event_end_date',true);
         g_form.setMandatory('event_title',true);
-		g_form.setMandatory('do_you_need_breakout_rooms',true);			 
+		//g_form.setMandatory('do_you_need_breakout_rooms',true);			 
    }
 
 	else if (selected_room !='Conference Center' && selected_room !='Cafeteria'){
 		g_form.setMandatory('event_start_date',false);
         g_form.setMandatory('event_end_date',false);
         g_form.setMandatory('event_title',false);
-		g_form.setMandatory('do_you_need_breakout_rooms',false);
+		//g_form.setMandatory('do_you_need_breakout_rooms',false);
 		//g_form.setMandatory('number_of_onsite_attendees',false);		
 		g_form.setMandatory('requested_room',false);
 	}
@@ -54,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b9ccb211bd09a105bf16577624bcb45</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>Make Fields for Conf Center Mandatory CS</sys_name>
         <sys_overrides/>
         <sys_package display_value="OWS Meet" source="x_g_nioa_ows_meet">c67fe0cc1b31e51080feea02f54bcb32</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="OWS Meet">c67fe0cc1b31e51080feea02f54bcb32</sys_scope>
         <sys_update_name>catalog_script_client_0b9ccb211bd09a105bf16577624bcb45</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2025-10-02 12:30:52</sys_updated_on>
+        <sys_updated_on>2025-10-16 18:24:29</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
